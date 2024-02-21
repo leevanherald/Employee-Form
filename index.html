@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script src="/js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Employee Form</h2>
+        <form id="empForm" method="post">
+            <div class="form-group">
+                <span><label for="empId">Employee ID:</label> <label id="empIdMsg">
+                    </label></span>
+                <input type="text" class="form-control" name="empId" id="empId" placeholder="Enter Employee ID" onchange="searchEmployee()"
+                    required >
+            </div>
+            <div class="form-group">
+                <label for="empName">Employee Name:</label>
+                <input type="text" class="form-control" id="empName" placeholder="Enter Employee Name" name="empName"
+                    >
+            </div>
+            <div class="form-group">
+                <label for="empSalary">Salary:</label>
+                <input type="text" class="form-control" id="empSalary" placeholder="Enter Employee Salary"
+                    name="empSalary" >
+            </div>
+            <div class="form-group">
+                <label for="empHRA">HRA:</label>
+                <input type="text" class="form-control" id="empHRA" placeholder="Enter Employee HRA" name="empHRA"
+                    >
+            </div>
+            <div class="form-group">
+                <label for="empDA">DA:</label>
+                <input type="text" class="form-control" id="empDA" placeholder="Enter Employee DA" name="empDA"
+                    >
+            </div>
+            <div class="form-group">
+                <label for="empDeduction">Deduction:</label>
+                <input type="Salary" class="form-control" id="empDeduction" placeholder="Enter Employee Deduction"
+                    name="empDeduction" >
+            </div>
+            <input type="button" class="btn btn-primary" id="empSave" value="Save" onclick="saveEmployee()" disabled>
+            <input type="button" class="btn btn-primary" id="empChange" value="Change" onclick="changeEmployeeData()"
+                disabled>
+            <input type="button" class="btn btn-primary" id="empReset" value="Reset" onclick="resetForm()"
+                disabled>
+
+        </form>
+    </div>
+    
+</body>
+
+</html>
